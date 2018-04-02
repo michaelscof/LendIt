@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/35e96f1d2e6608aadc4d0bd5d11f7c02/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="9296d6f092fcdba4fafb6ac26546a39babdab46a">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/b80662780605d86684448ef5d54fbe02/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="1fd3ceac7f415975323d52c6c6057db409a907f6">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/24.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/firebase-database-11.8.0.aar/f67ea1246925df3be1f19a26a5cf7b10/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="1b982cc8b5ab6f788690238dbe3ac3bb19f88b1a">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/f2c1b54d8bccb9e438e4447f483d5f64/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="5ad3911825107d8dd4b017fdecebfd23c08048dd">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/73d27d19215c39ceb03e995db59433f5/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="755c70a5a4e439030f67311dbafaa67b111377a6">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/20.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.0/8007981f7d7540d89cd18471b8e5dcd2b4f99167/common-1.1.0.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8007981f7d7540d89cd18471b8e5dcd2b4f99167">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/33.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/35.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/ede43c25d2ed61c81febfdc22a2c02e7/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="122de0d704f76d2bb5cb9db66e00fe90a0a41e78">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.0/edf3f7bfb84a7521d0599efa3b0113a0ee90f85/common-1.1.0.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="0edf3f7bfb84a7521d0599efa3b0113a0ee90f85">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/31.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/firebase-ui-common-3.2.2.aar/abd9b86ba15c7559819d92c7409da37e/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="131af965cffa6b598730f6a31570cdc1c9a75a9b">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/21.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.1.0/39ded76b5e1ce1c5b2688e1d25cdc20ecee32007/support-annotations-27.1.0.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="39ded76b5e1ce1c5b2688e1d25cdc20ecee32007">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/34.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.0.aar/3f8cd1a20924aa94bc423dbc8bfe504e/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="9a2ea9818b2f556b6663c0e7376bd664ee6c7550">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/27.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/61bddaebd744934b2c696cbae9c050f0/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d2af2ef4d987d753f2e8ee2d1480ab964d5c7273">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/firebase-ui-database-3.2.2.aar/99333e5f006d3128fef6f99f466d224d/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="19f79dba4f17eafe2e8443b267dbbaea06c2d5e1">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/b44030619e3c78ea5181066e8423c5f9/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e6aeff19a2ce1eb896557be73cb9ceb56f8d1cf3">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/b3aefbaafa6831152293d19d7bb0fc8e/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="42c9659c973e311ffdb645ed057e5053e0ab5c78">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/3531f9e391479f451ce5663e119a5fd1/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8a9fd7c97f1d13f97f3b52f9d2e54cd857d5acf9">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/30.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/497953801b3620b309d054e427835aab/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="5c66801c7ac6def4ffef7859925b12ce7940438e">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/95129f77ea108e63a3609a4e9fcd6b14/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="25c8cb628374f9a2d59ff9e1172753751e9a9f84">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/25.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/9d9aeb87c4ebeb5142e6b74585c019d1/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="264ad23f9752aabecfa41115c52a25a023a08839">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/3f619c437d2c3fb0330d245ba0f0fdbd/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="fe6c8fbfeeb1454c3eb605c9b66662991681fd55">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/dd0f48422ee549ee77351071059380c0/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3d46095629eedbd5b79b4d129428fc499473a73b">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/28.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/93245d4b807f4e28d430a77d43b25ab5/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="705378853cb9f264315d7a0a8edb6743d72efe9b">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/b3b14ce6046710d160c94fc9f9bd36a6/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e2bbe48deed35056023eed2cdc0cc92e5c7d3617">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/29.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/firebase-storage-11.8.0.aar/fb72869d76b1748980d47c0669a0c392/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c59cc4d67084879423713a416182208836c0a29f">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.0.aar/ad5a5ac63de333a44de5b807e0d6ebe3/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6f209b73a488f358673f39317df394bd7a99c05e">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/26.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/f3d97c494976dd5734051ba93d5ec5d6/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="71d380aeac037e63bab7bda2ba211777e16a2f42">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/32.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-11.8.0.aar/a293756b2a53abc61b877a799b00553a/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="08bbb31d3aae0e337647a49575c2d1f1ec7d6996">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.0.0-alpha1.aar/205a1476074e1e8c524d496bedb0ed21/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e176fd06c2ad5b50a2f5cb4de6000a83a7cb48f5">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-11.8.0.aar/7e864b9f423e36c5c25e515f218ed693/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="ed04a0ae7198b0d5d0e965d6afdb0fe784dcfbee">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/10.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/e7939d5bb5e4b6926788e14f108eb429/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/pankaj/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/ae69f365f40748417fdf80c8f330209d/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="bcd0bcdef85b31a656af76e39c0c95ce70800772">
+        <dex dex="/home/pankaj/AndroidStudioProjects/New_AddItem/app/build/intermediates/transforms/preDex/release/22.jar" />
+    </item>
+
+</items>

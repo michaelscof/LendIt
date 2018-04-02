@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">New_AddItem</string>
+    <string name="default_notification_channel_id">Pankaj_newItemadd</string>
+</resources>

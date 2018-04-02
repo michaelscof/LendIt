@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.pankaj.new_additem.MainPageActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:id="@+id/HomeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home Page"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold|italic"
+            android:textSize="25dp"
+            android:gravity="center_horizontal"/>
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/HomeText"
+            android:id="@+id/mainHome"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:src="@drawable/main_page"
+          />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle"
+            android:layout_below="@+id/mainHome"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</LinearLayout>

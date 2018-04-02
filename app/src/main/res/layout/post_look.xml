@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/Image"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/addimage"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_margin="2dp"/>
+        <TextView
+            android:id="@+id/Type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="category of product goes here"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            />
+        <TextView
+            android:id="@+id/Size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="description about the item goes here"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            />
+        <TextView
+            android:id="@+id/Cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cost of item goes here"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            />
+        <TextView
+            android:id="@+id/Caution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="info related to caution money goes here"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
+
