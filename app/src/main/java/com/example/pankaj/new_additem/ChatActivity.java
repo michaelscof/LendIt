@@ -119,7 +119,7 @@ public class ChatActivity extends AppCompatActivity {
                 }
                 else
                 {
-                    Toast.makeText(ChatActivity.this,"write something",Toast.LENGTH_LONG).show();
+                    Toast.makeText(ChatActivity.this,"write something else",Toast.LENGTH_LONG).show();
                 }
                 //display_chatBox();
             }
