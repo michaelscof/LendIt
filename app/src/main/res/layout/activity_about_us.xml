@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fitsSystemWindows="true">
+
+
+<ScrollView
+    android:id="@+id/scrollView2"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    app:layout_constraintEnd_toEndOf="parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/dev_nitish"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:orientation="vertical"
+            android:background="@drawable/ic_border"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dev_nitish_thumbnail"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="150dp"
+                android:layout_centerInParent="true"
+                android:layout_height="150dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_pk" />
+
+            <TextView
+                android:id="@+id/dev_nitish_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dev_nitish_thumbnail"
+                android:gravity="center"
+                android:text="Pankaj Gupta"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp" />
+
+            <TextView
+
+                android:id="@+id/dev_nitish_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dev_nitish_name"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Backend Developer" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dev_pooja"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/dev_nitish"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/ic_border"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dev_pooja_thumbnail"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_pragya2" />
+
+            <TextView
+                android:id="@+id/dev_pooja_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dev_pooja_thumbnail"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Pragya Singh"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/dev_pooja_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dev_pooja_name"
+                android:gravity="center"
+                android:text="UI/UX Developer"
+                android:textColor="@color/colorPrimaryDark" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dev_harneet"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/dev_pooja"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:orientation="vertical"
+            android:background="@drawable/ic_border"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dev_harneet_thumbnail"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/user_profile" />
+
+            <TextView
+                android:id="@+id/dev_harneet_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dev_harneet_thumbnail"
+                android:gravity="center"
+                android:text="Nitin Shukla"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/dev_harneet_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dev_harneet_name"
+                android:gravity="center"
+                android:text="UI/Ux Developer"
+                android:textColor="@color/colorPrimaryDark" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dev_tushar"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/dev_harneet"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/ic_border"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dev_tushar_thumbnail"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/user_profile" />
+
+            <TextView
+                android:id="@+id/dev_tushar_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dev_tushar_thumbnail"
+                android:gravity="center"
+                android:text="Pankaj Rawat"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/dev_tushar_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dev_tushar_name"
+                android:gravity="center"
+                android:text="Ui/ux Developer"
+                android:textColor="@color/colorPrimaryDark" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

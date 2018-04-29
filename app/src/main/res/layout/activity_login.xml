@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,6 +8,7 @@
     tools:context="com.example.pankaj.new_additem.LoginActivity">
 
     <LinearLayout
+        android:layout_marginTop="50dp"
         android:layout_centerVertical="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,7 +22,7 @@
             android:textStyle="italic"
             android:id="@+id/textView"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="0dp"/>
+            android:layout_marginBottom="15dp"/>
 
         <EditText
             android:id="@+id/editTextEmail"
@@ -29,6 +30,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:hint="Email...."
+            android:background="@drawable/input_outline"
+            android:padding="12dp"
             android:inputType="textEmailAddress" />
 
         <EditText
@@ -37,18 +40,27 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:hint="Password...."
+            android:background="@drawable/input_outline"
+            android:padding="12dp"
             android:inputType="textPassword" />
 
         <Button
             android:id="@+id/buttonSignin"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_margin="15dp"
             android:text="SignIn" />
 
         <TextView
             android:text="Not have an account? Signup Here"
             android:id="@+id/textViewSignUp"
+            android:textAlignment="center"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Forgot Password"
+            android:id="@+id/textViewForgotPassword"
             android:textAlignment="center"
             android:layout_margin="15dp"
             android:layout_width="match_parent"
@@ -69,9 +81,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="250dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="40dp"
             >
 
         </com.google.android.gms.common.SignInButton>
     </LinearLayout>
-</RelativeLayout>
+</ScrollView>

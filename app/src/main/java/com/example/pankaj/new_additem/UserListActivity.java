@@ -1,9 +1,13 @@
 package com.example.pankaj.new_additem;
 
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.MenuItem;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.ChildEventListener;
@@ -30,6 +34,10 @@ public class UserListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_list);
+        android.support.v7.app.ActionBar actionBar=getSupportActionBar();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR2) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
 
         databaseReferenceUser= FirebaseDatabase.getInstance().getReference().child("students");
         mAuth=FirebaseAuth.getInstance();
@@ -61,7 +69,9 @@ public class UserListActivity extends AppCompatActivity {
 
                             String image = dataSnapshot.child("image").getValue().toString();
 
-                            User user = new User(image, name, user_id);
+                            String status=dataSnapshot.child("status").getValue().toString();
+
+                            User user = new User(image, name, user_id,status);
 
                             userlist.add(user);
 
@@ -75,5 +85,17 @@ public class UserListActivity extends AppCompatActivity {
 
             }
         });
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id=item.getItemId();
+        switch (id)
+        {
+            case android.R.id.home:
+                Intent intent=new Intent(getApplicationContext(),MainPageNActivity.class);
+                startActivity(intent);
+                finish();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

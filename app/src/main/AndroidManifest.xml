@@ -7,24 +7,30 @@
     <application
         android:name=".ForUserOffline"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@drawable/appicon"
+        android:label="LendIt"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Post_Item" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Collection List" />
+        <activity
+            android:name=".Post_Item"
+            android:label="Post Item" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="RegisterPage" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="LoginPage" />
         <activity android:name=".SetupAccountActivity" />
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".UserListActivity" />
+        <activity
+            android:name=".ProfileActivity"
+            android:label="Profile" />
+        <activity
+            android:name=".UserListActivity"
+            android:label="Chats" />
         <activity android:name=".SendActivity" />
 
         <service android:name=".FirebaseMessagingService">
@@ -42,8 +48,37 @@
         </activity>
         <activity
             android:name=".ChatActivity"
-            android:windowSoftInputMode="stateHidden"></activity>
-        <activity android:name=".MainPageActivity"></activity>
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".MainPageActivity"
+            android:label="HomePage" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Search_ItemActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".ChangePassword" />
+        <activity android:name=".IdCardShowActivity" />
+        <activity
+            android:name=".MainPageNActivity"
+            android:label="Home Page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NotificationMessageActivity"
+            android:label="Notifications" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:label="Feedback Page"></activity>
+        <activity android:name=".AboutUsActivity"
+            android:label="About us"></activity>
     </application>
 
 </manifest>

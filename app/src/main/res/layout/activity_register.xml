@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,6 +9,8 @@
         android:layout_centerVertical="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         android:orientation="vertical">
 
 
@@ -19,14 +21,34 @@
             android:text="User Registration"
             android:id="@+id/textView"
             android:textStyle="italic"
-            android:layout_marginBottom="20dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="Main Image"
+            android:padding="2dp"
             android:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add photo of Idcard"
+            android:layout_margin="14dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <ImageView
+            android:id="@+id/addIdImage"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/addimage"/>
 
         <EditText
+            android:background="@drawable/input_outline"
+            android:padding="12dp"
             android:id="@+id/editTextUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="14dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="14dp"
             android:hint="Your Name...."
             android:inputType="textEmailAddress" />
 
@@ -36,6 +58,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="14dp"
             android:hint="Email...."
+            android:background="@drawable/input_outline"
+            android:padding="12dp"
             android:inputType="textEmailAddress" />
 
         <EditText
@@ -44,12 +68,14 @@
             android:layout_height="wrap_content"
             android:layout_margin="14dp"
             android:hint="Password...."
+            android:background="@drawable/input_outline"
+            android:padding="12dp"
             android:inputType="textPassword" />
 
         <Button
             android:id="@+id/buttonSignup"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_margin="14dp"
             android:text="Signup" />
 
@@ -57,11 +83,13 @@
             android:text="Already Registered? Signin Here"
             android:id="@+id/textViewSignin"
             android:textAlignment="center"
-            android:layout_margin="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="60dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
     </LinearLayout>
 
 
-</RelativeLayout>
+</ScrollView>

@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<android.support.v7.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="10dp">
+    android:layout_height="100dp"
+    android:layout_margin="0dp">
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
     <de.hdodenhof.circleimageview.CircleImageView
 
         android:id="@+id/view_Userimage"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:src="@drawable/user_profile"/>
     <TextView
         android:id="@+id/view_username"
@@ -16,11 +19,23 @@
         android:layout_height="80dp"
         android:layout_toRightOf="@+id/view_Userimage"
         android:text="Message me"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:textColor="@android:color/black"
         android:gravity="center_vertical"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:layout_marginLeft="15dp"
         />
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view_username"
+        android:layout_toRightOf="@+id/view_Userimage"
+        android:layout_marginLeft="15dp"
+        android:text="Hey there!! I'm using LentIt App.Its cool" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

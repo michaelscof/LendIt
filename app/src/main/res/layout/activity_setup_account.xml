@@ -8,13 +8,16 @@
     android:layout_gravity="center_vertical"
     tools:context="com.example.pankaj.new_additem.SetupAccountActivity">
 
-    <ImageButton
+    <ImageView
         android:id="@+id/imageButton"
-        android:layout_width="350dp"
+        android:layout_width="match_parent"
         android:layout_height="300dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitXY"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/user_profile" />
+        android:src="@drawable/addimage" />
+
 
     <EditText
         android:id="@+id/editTextSetName"
@@ -22,8 +25,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:background="@drawable/input_outline"
+        android:padding="11dp"
         android:layout_below="@+id/imageButton"
-        android:layout_marginTop="37dp"
+        android:layout_margin="20dp"
         android:hint="Enter your setup name...."
        />
     <Button

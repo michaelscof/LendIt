@@ -13,26 +13,26 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="Request From"
-        android:textSize="30dp"
+        android:textSize="14dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         />
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/requestprofileimage"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_below="@+id/show"
         android:src="@drawable/user_profile"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"/>
+        android:layout_marginTop="12dp"/>
     <TextView
         android:id="@+id/requesttextviewUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="Username"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
         android:layout_below="@+id/requestprofileimage"
-        android:layout_marginTop="15dp"/>
+        android:layout_marginTop="12dp"/>
     <TextView
         android:id="@+id/notify"
         android:layout_width="wrap_content"
@@ -40,13 +40,34 @@
         android:text="message"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:layout_marginTop="12dp"
         android:layout_below="@+id/requesttextviewUsername"/>
+    <TextView
+        android:id="@+id/For"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="For Item"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/notify"/>
+    <ImageView
+
+        android:id="@+id/imageItem"
+        android:layout_below="@+id/For"
+        android:layout_width="390dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="260dp"
+        android:src="@drawable/addimage"/>
     <Button
         android:id="@+id/accept_request"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
-        android:text="Accept the request"
+        android:text="Accept"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="10dp"/>
 

@@ -2,7 +2,7 @@
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp">
+    android:layout_margin="3dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,38 +22,97 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="category of product goes here"
-            android:layout_margin="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
             android:textStyle="bold"
-            android:textSize="14dp"
+            android:textSize="20dp"
             />
         <TextView
-            android:id="@+id/Size"
+            android:id="@+id/subType"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="description about the item goes here"
-            android:layout_margin="10dp"
-            android:textStyle="bold"
-            android:textSize="14dp"
+            android:text="category of product goes here"
+            android:layout_marginTop="1dp"
+            android:textStyle="normal"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="0dp"
+            android:textSize="13dp"
             />
         <TextView
             android:id="@+id/Cost"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="cost of item goes here"
-            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
             android:textStyle="bold"
-            android:textSize="14dp"
+            android:textColor="#424242"
+            android:textSize="18dp"
             />
         <TextView
             android:id="@+id/Caution"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="info related to caution money goes here"
-            android:layout_marginTop="10dp"
-            android:textStyle="bold"
+            android:layout_marginTop="1dp"
+            android:textStyle="normal"
             android:textSize="14dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="1dp"
             android:layout_marginLeft="10dp" />
+        <TextView
+            android:id="@+id/Desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:text="Description about the item goes here"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="#424242"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/Likeimage"
+                android:id="@+id/Popularity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="view popularity"
+                android:layout_margin="8dp"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                />
+            <ImageView
+                android:id="@+id/Likeimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/like"/>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UserName goes here"
+            android:textStyle="bold"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="17dp"
+            />
+
     </LinearLayout>
 
 

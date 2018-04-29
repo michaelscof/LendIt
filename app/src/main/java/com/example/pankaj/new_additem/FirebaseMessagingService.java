@@ -23,6 +23,7 @@ public class FirebaseMessagingService extends com.google.firebase.messaging.Fire
 
         String messagedata=remoteMessage.getData().get("message");
         String userId=remoteMessage.getData().get("fromid");
+        String postid=remoteMessage.getData().get("postid");
 
         String click_action=remoteMessage.getNotification().getClickAction();
 
@@ -35,6 +36,8 @@ public class FirebaseMessagingService extends com.google.firebase.messaging.Fire
         Intent resultIntent = new Intent(click_action);
         resultIntent.putExtra("message",messagedata);
         resultIntent.putExtra("fromid",userId);
+        resultIntent.putExtra("postid",postid);
+
         //TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
         //stackBuilder.addNextIntentWithParentStack(intent);
         PendingIntent resultPendingIntent =

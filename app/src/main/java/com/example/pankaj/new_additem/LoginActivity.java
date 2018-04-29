@@ -47,6 +47,7 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
     private ProgressDialog progressDialog;
     private DatabaseReference databaseReference;
+    private TextView textViewForgotPassword;
     private SignInButton googlebtn;
     private final static int RC_SIGN_IN=1;
     private GoogleApiClient mGoogleApiClient;
@@ -63,6 +64,7 @@ public class LoginActivity extends AppCompatActivity {
         buttonSignIn=findViewById(R.id.buttonSignin);
         googlebtn=findViewById(R.id.GooglesignInButton);
         progressDialog=new ProgressDialog(this);
+        textViewForgotPassword=findViewById(R.id.textViewForgotPassword);
 
         //getting firebase auth object
         firebaseAuth = FirebaseAuth.getInstance();
@@ -73,10 +75,10 @@ public class LoginActivity extends AppCompatActivity {
         //means user is already logged in
         if(firebaseAuth.getCurrentUser() != null){
             //close this activity
-            finish();
             //opening profile activity
             System.out.println("hello guysll");
-            startActivity(new Intent(LoginActivity.this, MainPageActivity.class));
+            startActivity(new Intent(LoginActivity.this,MainPageNActivity.class));
+            finish();
         }
 
         buttonSignIn.setOnClickListener(new View.OnClickListener() {
@@ -84,6 +86,39 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 userLogin();
+            }
+        });
+        textViewForgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String email=editTextEmail.getText().toString().trim();
+                if(TextUtils.isEmpty(email))
+                {
+                    Toast.makeText(getApplicationContext(),"Please enter email",Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                progressDialog.setMessage("Sending email..");
+                progressDialog.show();
+                firebaseAuth.sendPasswordResetEmail(email).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if(task.isSuccessful())
+                        {
+                            progressDialog.dismiss();
+                            Toast.makeText(getApplicationContext(), "We have sent you instructions to reset your password!", Toast.LENGTH_SHORT).show();
+                        }
+                        else
+                        {
+                            progressDialog.dismiss();
+                            Toast.makeText(getApplicationContext(), "Failed to send reset email!", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+
+
+
+
             }
         });
         textViewSignUp.setOnClickListener(new View.OnClickListener() {
@@ -165,7 +200,7 @@ public class LoginActivity extends AppCompatActivity {
                                         public void onSuccess(Void aVoid) {
 
                                             Log.d(TAG, "signInWithCredential:success");
-                                            startActivity(new Intent(LoginActivity.this,MainPageActivity.class));
+                                            startActivity(new Intent(LoginActivity.this,MainPageNActivity.class));
                                             FirebaseUser user = firebaseAuth.getCurrentUser();
                                         }
                                         // startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
@@ -229,7 +264,7 @@ public class LoginActivity extends AppCompatActivity {
                                         public void onSuccess(Void aVoid) {
 
                                             Toast.makeText(LoginActivity.this, "successfully login", Toast.LENGTH_LONG).show();
-                                            startActivity(new Intent(LoginActivity.this, MainPageActivity.class));
+                                            startActivity(new Intent(LoginActivity.this, MainPageNActivity.class));
                                             // checkUserExist();
                                         }
                             // startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
@@ -257,7 +292,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 if(dataSnapshot.hasChild(userId))
                 {
-                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                    startActivity(new Intent(getApplicationContext(),MainPageNActivity.class));
                 }else{
 
                     Toast.makeText(LoginActivity.this,"First Register yourself then try",Toast.LENGTH_LONG).show();

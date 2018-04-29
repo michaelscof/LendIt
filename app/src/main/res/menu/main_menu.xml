@@ -2,27 +2,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:id="@+id/action_AddItem"
-        android:title="Add Item"
-        android:icon="@mipmap/add"
+    <item
+        android:id="@+id/show_Userlist"
+
+        android:icon="@drawable/chat2"
+        android:title="ViewUserList"
         app:showAsAction="always" />
 
-
-    <item android:id="@+id/action_setting"
-        android:title="setting"
-        app:showAsAction="never"
-        />
+    <item
+        android:id="@+id/action_AddItem"
+        android:icon="@mipmap/add"
+        android:title="Add Item"
+        app:showAsAction="always" />
     <item android:id="@+id/action_logout"
         android:title="LogOut"
         app:showAsAction="never"
         />
-    <item android:id="@+id/show_Profile"
-        android:title="ViewProfile"
-        app:showAsAction="never"
-        />
-    <item android:id="@+id/show_Userlist"
-        android:title="ViewUserList"
-        app:showAsAction="never"
-        />
-
 </menu>

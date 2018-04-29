@@ -41,9 +41,10 @@ public class UserRecyclerviewAdapter extends RecyclerView.Adapter<UserRecyclervi
     }
 
     @Override
-    public void onBindViewHolder(UserRecyclerviewAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(final UserRecyclerviewAdapter.ViewHolder holder, int position) {
 
         holder.UserName.setText(userList.get(position).getName());
+        holder.Status.setText(userList.get(position).getStatus());
         CircleImageView user_pics=holder.Userpic;
         Glide.with(context).load(userList.get(position).getImage()).into(user_pics);
         final String user_id=userList.get(position).getUser_id();
@@ -58,6 +59,15 @@ public class UserRecyclerviewAdapter extends RecyclerView.Adapter<UserRecyclervi
                 context.startActivity(intent);
             }
         });
+        holder.Userpic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent=new Intent(context,ProfileActivity.class);
+                intent.putExtra("user_id",user_id);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -65,11 +75,12 @@ public class UserRecyclerviewAdapter extends RecyclerView.Adapter<UserRecyclervi
         return userList.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+     class ViewHolder extends RecyclerView.ViewHolder {
 
         private View mview;
         private CircleImageView Userpic;
         private TextView UserName;
+        private TextView Status;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -78,7 +89,7 @@ public class UserRecyclerviewAdapter extends RecyclerView.Adapter<UserRecyclervi
 
             UserName=mview.findViewById(R.id.view_username);
             Userpic=mview.findViewById(R.id.view_Userimage);
-
+            Status=mview.findViewById(R.id.statusText);
         }
     }
 }

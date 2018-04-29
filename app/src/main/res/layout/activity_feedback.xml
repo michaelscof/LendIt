@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.pankaj.new_additem.FeedbackActivity">
+    <EditText
+        android:id="@+id/feedbackText"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:inputType="textMultiLine"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_outline"
+        android:hint="Say Something..."
+        android:padding="12dp"/>
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/feedbackButton"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="Submit Feedback"/>
+
+</LinearLayout>

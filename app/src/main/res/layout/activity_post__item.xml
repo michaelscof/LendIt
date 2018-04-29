@@ -11,19 +11,10 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    <LinearLayout
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="3dp" >
+        android:focusable="true"
+        android:focusableInTouchMode="true">
 
-        <Button
-            android:id="@+id/btnSelectPhoto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Select Photo" />
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,39 +23,60 @@
         android:orientation="vertical"
         android:padding="10dp" >
 
-        <ImageView
-            android:id="@+id/itemImage"
+        <ImageButton
+
+            android:id="@+id/btnSelectPhoto"
             android:layout_width="match_parent"
-            android:layout_height="225dp"
-            android:src="@drawable/camera" />
+            android:layout_height="220dp"
+            android:src="@drawable/addimage"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+
+            android:layout_margin="2dp"/>
     </LinearLayout>
-    <EditText
+    <AutoCompleteTextView
+
         android:id="@+id/editTextType"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Type"
-        android:layout_margin="3dp"/>
+        android:hint="Category"
+        android:padding="10dp"
+        android:background="@drawable/input_outline"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
     <EditText
-        android:id="@+id/editTextSize"
+        android:id="@+id/editDesc"
+        android:inputType="textMultiLine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Size"
-        android:layout_margin="3dp"/>
+        android:hint="Description"
+        android:padding="10dp"
+        android:background="@drawable/input_outline"
+        android:layout_margin="5dp"/>
     <EditText
         android:id="@+id/editTextCost"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Cost/Day"
-        android:layout_margin="3dp"/>
+        android:padding="10dp"
+        android:background="@drawable/input_outline"
+        android:layout_margin="5dp"/>
     <EditText
         android:id="@+id/editTextCaution"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Caution Money"
+        android:padding="10dp"
+        android:background="@drawable/input_outline"
         android:layout_margin="3dp"/>
     <Button
+        android:layout_marginTop="30dp"
         android:id="@+id/submit"
-        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/input_outline"
         android:layout_height="wrap_content"
         android:text="Submit"
         />

@@ -1,7 +1,10 @@
 package com.example.pankaj.new_additem;
 
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
+import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,6 +13,7 @@ import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -32,7 +36,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
-import com.squareup.picasso.Picasso;
+//import com.squareup.picasso.Picasso;
 import com.google.firebase.database.Query;
 
 import java.text.DateFormat;
@@ -59,6 +63,10 @@ public class ChatActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat);
+        android.support.v7.app.ActionBar actionBar=getSupportActionBar();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR2) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
 
         send=findViewById(R.id.chat_sendButton);
 
@@ -119,7 +127,7 @@ public class ChatActivity extends AppCompatActivity {
                 }
                 else
                 {
-                    Toast.makeText(ChatActivity.this,"write something else",Toast.LENGTH_LONG).show();
+                    Toast.makeText(ChatActivity.this,"write something",Toast.LENGTH_LONG).show();
                 }
                 //display_chatBox();
             }
@@ -238,5 +246,17 @@ public class ChatActivity extends AppCompatActivity {
         //linearLayoutManager.smoothScrollToPosition(recycleMessageList, null, mPeopleRVAdapter.getItemCount());
         //recycleMessageList.scrollToPosition(mPeopleRVAdapter.getItemCount()-1);
         //mPeopleRVAdapter.startListening();
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id=item.getItemId();
+        switch (id)
+        {
+            case android.R.id.home:
+                Intent intent=new Intent(getApplicationContext(),UserListActivity.class);
+                startActivity(intent);
+                finish();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

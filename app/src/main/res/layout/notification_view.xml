@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_margin=".2dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/view_fromuser"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="Message From"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:layout_marginLeft="15dp"
+                />
+
+            <TextView
+                android:id="@+id/message_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:textSize="16dp"
+                android:layout_alignBottom="@+id/view_fromuser"
+                android:layout_marginLeft="15dp"
+                android:text="Hey there!! I'm using LentIt App.Its cool" />
+
+        </RelativeLayout>
+
+</android.support.v7.widget.CardView>

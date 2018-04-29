@@ -9,16 +9,19 @@ public class User {
     String image;
     String name;
     String user_id;
+    String status;
 
     public User() {
-        this.image = image;
-        this.name = name;
+        this.image =null;
+        this.name = null;
+        this.status=null;
+        this.image=null;
     }
-
-    public User(String image, String name,String user_id) {
+    public User(String image, String name,String user_id,String status) {
         this.image = image;
         this.name = name;
         this.user_id=user_id;
+        this.status=status;
     }
 
     public String getImage() {
@@ -27,6 +30,14 @@ public class User {
 
     public String getName() {
         return name;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     public void setImage(String image) {

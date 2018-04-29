@@ -2,11 +2,13 @@ package com.example.pankaj.new_additem;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,7 +28,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class NotificationsActivity extends AppCompatActivity {
 
-    private TextView noticeText;
+    private TextView noticeText,show;
     private DatabaseReference userdatabase;
     private CircleImageView pic_of_requestuser;
     private TextView request_userName;
@@ -34,6 +36,10 @@ public class NotificationsActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private String userId;
     private ProgressDialog progressDialog;
+    private String name;
+    private String Current_user_name;
+    private String postId;
+    private ImageView requestItemImage;
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -42,16 +48,23 @@ public class NotificationsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_notifications);
 
 
+        String currentUserID=FirebaseAuth.getInstance().getUid().toString();
+        getName(currentUserID);
         userId = getIntent().getStringExtra("fromid");
         userdatabase = FirebaseDatabase.getInstance().getReference().child("students").child(userId);
         mAuth = FirebaseAuth.getInstance();
         request_userName = findViewById(R.id.requesttextviewUsername);
         acceptrequest = findViewById(R.id.accept_request);
         pic_of_requestuser = findViewById(R.id.requestprofileimage);
+        show=findViewById(R.id.show);
+        requestItemImage=findViewById(R.id.imageItem);
 
         String getMessage = getIntent().getStringExtra("message");
+        postId=getIntent().getStringExtra("postid");
+        setImage();
         if(getMessage.equals("request is accepted")){
 
+            show.setText("Reply From");
             acceptrequest.setVisibility(View.GONE);
         }
 
@@ -63,7 +76,7 @@ public class NotificationsActivity extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
-                String name = dataSnapshot.child("name").getValue().toString();
+                name = dataSnapshot.child("name").getValue().toString();
                 String image = dataSnapshot.child("image").getValue().toString();
 
                 request_userName.setText(name);
@@ -90,8 +103,10 @@ public class NotificationsActivity extends AppCompatActivity {
 
                 String mssg = "request is accepted";
                 HashMap<String, String> notifications = new HashMap<>();
+                notifications.put("fromName", Current_user_name);
                 notifications.put("message", mssg);
                 notifications.put("from", current_userId);
+                notifications.put("postid",postId);
                 DatabaseReference user_notification = databaseReference.child(userId).push();
                 user_notification.setValue(notifications).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
@@ -100,6 +115,8 @@ public class NotificationsActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
 
                             Toast.makeText(NotificationsActivity.this, "Notification is successfully send", Toast.LENGTH_LONG).show();
+                            startActivity(new Intent(getApplicationContext(),MainPageNActivity.class));
+                            progressDialog.dismiss();
                         } else {
                             Toast.makeText(NotificationsActivity.this, "getting some error", Toast.LENGTH_LONG).show();
                         }
@@ -109,5 +126,45 @@ public class NotificationsActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void setImage() {
+
+        DatabaseReference singleItem=FirebaseDatabase.getInstance().getReference().child("Item").child(postId);
+        singleItem.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+                if(dataSnapshot.child("image").getValue()!=null){
+
+                    Glide.with(getApplicationContext()).load(dataSnapshot.child("image").getValue().toString()).into(requestItemImage);
+                }
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+    }
+
+    public void getName(String user_id1)
+    {
+        DatabaseReference databaseReferencesingleuser=FirebaseDatabase.getInstance().getReference().child("students").child(user_id1);
+        databaseReferencesingleuser.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+                if(!(dataSnapshot.child("name").getValue()==null))
+                    Current_user_name=dataSnapshot.child("name").getValue().toString();
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
     }
 }
